@@ -50,7 +50,7 @@ class App extends Component {
   };
 
   useNSP = () => {
-    socket.disconnect();
+    socket.close();
     socket = socketIOClient(`${endpoint}/${nsp}`);
   };
 
